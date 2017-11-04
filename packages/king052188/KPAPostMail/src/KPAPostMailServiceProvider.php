@@ -26,5 +26,9 @@ class KPAPostMailServiceProvider extends ServiceProvider
         $this->app->bind('king052188-kpapostmail', function() {
           return new KPAPostMail();
         });
+
+        $this->app->bind('king052188-kpahelper', function() {
+          return new KPAHelper();
+        });
     }
 }

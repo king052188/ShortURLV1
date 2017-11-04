@@ -18,7 +18,7 @@
                       <h3 class="title">Access-Token</h3>
                       <div class="content">
                         <p>access_token: <span>{{ Auth::user()->token }}</span></p>
-                        <p>get_url: <span>{{ app()->getAppUrl() }}api/v1/url-shortener-sdk/<b>&lt;access_token&gt;</b>?url=<b>&lt;your_url_here&gt;</b></span></p>
+                        <p>get_url: <span>api/v1/url-shortener-sdk/<b>&lt;access_token&gt;</b>?url=<b>&lt;your_url_here&gt;</b></span></p>
                       </div>
                       <p class="pull-right" style="margin-top: 5px;"><button id="btnShowSampleCode">Show Sample-Code</button></p>
                     </div>
@@ -26,7 +26,7 @@
                     <div id="div_json_sample" class="information m_top20" style="display: none;">
                       <h3 class="title">Sample-Code</h3>
                       <div class="content">
-                        <p>get_url: <a class="api_url" href="{{ app()->getAppUrl() }}api/v1/url-shortener-sdk/{{ Auth::user()->token }}?url=https://webs.kpa.ph/2017/07/23/launch-your-dream-website-today/" target="_blank">{{ app()->getAppUrl() }}api/v1/url-shortener-sdk/<b>{{ Auth::user()->token }}</b>?url=<b>https://webs.kpa.ph/2017/07/23/launch-your-dream-website-today/</b></a></p>
+                        <p>get_url: <a class="api_url" href="api/v1/url-shortener-sdk/{{ Auth::user()->token }}?url=https://webs.kpa.ph/2017/07/23/launch-your-dream-website-today/" target="_blank">api/v1/url-shortener-sdk/<b>{{ Auth::user()->token }}</b>?url=<b>https://webs.kpa.ph/2017/07/23/launch-your-dream-website-today/</b></a></p>
                         <p style="margin-top: 20px;">output_result:</p>
                         <div class="json_format">
                           <p>{</p>

@@ -12,8 +12,8 @@
     <link rel="shortcut icon" type="image/png" href="{{ secure_asset('images/logo.kpa.ph.png') }}"/>
     <!-- Styles -->
     <script src="{{ secure_asset('js/jquery-3.2.1.min.js') }}"></script>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/table.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/table.css') }}" rel="stylesheet">
     <style>
         html, body {
             background-color: #f7f7f7;

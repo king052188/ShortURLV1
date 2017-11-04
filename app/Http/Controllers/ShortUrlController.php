@@ -4,22 +4,34 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+// database
 use App\Url;
 use App\Counter;
-
 use DB;
 
+// seo
 use SEOMeta;
 use OpenGraph;
 use Twitter;
 ## or
 use SEO;
 
+//classes
+use KPAHelper;
+
+
 class ShortUrlController extends Controller
 {
     //
+    public static $app_;
+
+    public function __construct() {
+       $this::$app_ = KPAHelper::getConfigApp();
+    }
+
+
     public function init($hex_code = null) {
-       SEO::setTitle(app()->getAppName());
+       SEO::setTitle($this::$app_["name"]);
        SEO::setDescription('ShortUrl by kpa.ph is used to create short URLs that can be easily shared, tweeted or social and online marketing. Activate your best audience through the power of the link with kpa.ph');
        SEO::opengraph()->setUrl('https://kpa.ph');
        SEO::setCanonical('https://kpa.ph/about-us');
@@ -75,7 +87,7 @@ class ShortUrlController extends Controller
           "Status" => 200,
           "Message" => "Success.",
           "Hex_Code" => $hex_code,
-          "Short_Url" => app()->getAppUrl() . $hex_code,
+          "Short_Url" => $this::$app_["url"] . $hex_code,
           "Origin_Url_Title" => $origin_url_title,
           "Origin_Url" => $origin_url
         ];

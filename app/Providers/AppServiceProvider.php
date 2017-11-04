@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+use KPAHelper;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -14,6 +16,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        view()->composer('welcome', function($view)
+        {
+             $view->with('app', KPAHelper::getConfigApp());
+        });
     }
 
     /**

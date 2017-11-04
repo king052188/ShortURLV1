@@ -183,7 +183,7 @@
             <div class="content">
                 <div class="title m-b-md">
                   <a href="/">
-                    <div style="float: left; text-align: center;"><b>{{ app()->getAppName() }}</b></div>
+                    <div style="float: left; text-align: center;"><b>{{ $app["name"] }}</b></div>
                     <div style="float: left; margin: 80px 0 0 -80px; font-size: .7em;">.kpa.ph</div>
                   </a>
                 </div>

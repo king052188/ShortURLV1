@@ -234,6 +234,7 @@ return [
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
 
         'KPAPostMail' => king052188\KPAPostMail\Facades\KPAPostMail::class,
+        'KPAHelper' => king052188\KPAPostMail\Facades\KPAHelper::class,
 
     ],
 
