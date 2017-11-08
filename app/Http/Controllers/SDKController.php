@@ -10,6 +10,8 @@ use App\User;
 
 use KPAPostMail;
 
+use BinaryLoops;
+
 class SDKController extends Controller
 {
     //
@@ -56,5 +58,10 @@ class SDKController extends Controller
        $subject = "Sample Email From KPAPostMail | ". rand(1000, 9999);
        $message = "Hello, This is a test email from KPAPostMail";
        return KPAPostMail::Send($send_to, $subject, $message);
+    }
+
+    public function encoding(Request $request) {
+
+      return view('Encoding');
     }
 }

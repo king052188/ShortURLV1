@@ -24,7 +24,8 @@
         ],
         "psr-4": {
             "App\\": "app/",
-            "king052188\\KPAPostMail\\": "packages/king052188/KPAPostMail/src/"
+            "king052188\\KPAPostMail\\": "packages/king052188/KPAPostMail/src/",
+            "king052188\\BinaryLoops\\": "packages/king052188/BinaryLoops/src/"
         }
     },
     "autoload-dev": {

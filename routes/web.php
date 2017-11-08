@@ -15,6 +15,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/encoding', 'SDKController@encoding');
+
+
+
 Route::get('/testing32', 'SDKController@testing');
 
 Route::get('/{hex_code?}', 'ShortUrlController@init');

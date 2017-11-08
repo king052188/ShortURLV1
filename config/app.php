@@ -183,6 +183,8 @@ return [
         //testing classes costumized
         king052188\KPAPostMail\KPAPostMailServiceProvider::class,
 
+        king052188\BinaryLoops\BinaryLoopsServiceProvider::class,
+
     ],
 
     /*
@@ -235,6 +237,9 @@ return [
 
         'KPAPostMail' => king052188\KPAPostMail\Facades\KPAPostMail::class,
         'KPAHelper' => king052188\KPAPostMail\Facades\KPAHelper::class,
+
+        'BinaryLoops' => king052188\BinaryLoops\Facades\BinaryLoops::class,
+        'BLHelper' => king052188\BinaryLoops\Facades\BLHelper::class,
 
     ],
 
